@@ -1,4 +1,6 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
+
+const screenWidth = Dimensions.get('window').width
 
 const fonte = "Josefins-Sans-Bold"
 const primaria = "#16041B"
@@ -8,12 +10,18 @@ const verde = "#52FF00"
 const cinza = "#D9D9D9"
 
 const styles = StyleSheet.create({
+    container: {
+      marginTop: 10, 
+      backgroundColor: '#603F74',
+      borderRadius: 10,
+      margin: 10,
+    },
     header: {
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
-        paddingHorizontal: 10,
-        marginBottom: 8,
+        padding: 10,
+        marginBottom: 2,
       },
     profileImage:{
         height: 30,
@@ -27,13 +35,27 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         color: 'white'
     },
+    content:{
+        height: 350,
+        width: screenWidth,
+        backgroundColor: primaria,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     texto:{
         fontFamily: fonte,
         flexDirection: 'column',
         color: 'white',
-        alignItems: 'center',
-        justifyContent: 'center',
-    }     
+    },
+    viewBotao:{
+      flexDirection: 'row',
+      padding: 10,
+      justifyContent: 'space-around'
+    },
+    botao:{
+        height: 28,
+        width: 28,
+    }   
   });
 
 export default styles

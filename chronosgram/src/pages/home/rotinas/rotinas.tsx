@@ -11,6 +11,8 @@ export default function Rotinas() {
   return (
     <ScrollView style={styles.container}>
       <Feed/>
+      <Feed/>
+      <Feed/>
     </ScrollView>
   );
 }
