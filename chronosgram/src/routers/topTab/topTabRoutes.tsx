@@ -3,6 +3,7 @@ import styles from './style';
 
 import Main from '../../pages/home/main/main';
 import Rotinas from '../../pages/home/rotinas/rotinas';
+import Amigos from '../../pages/home/amigos/amigos';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -18,7 +19,7 @@ export default function TopTabRoutes(){
             <Tab.Screen name="Home" component={Main} />
             <Tab.Screen name="FEED" component={Rotinas} />
             <Tab.Screen name="Explorar" component={Rotinas} />
-            <Tab.Screen name="Amigos" component={Rotinas} />
+            <Tab.Screen name="Amigos" component={Amigos} />
         </Tab.Navigator>
     )
 }
