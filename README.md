@@ -1,4 +1,4 @@
-# ChronosGram App Mobile
+# ChronosGram
 
 ChronosGram é uma aplicação móvel moderna construída com React Native e Expo, projetada para fornecer uma experiência de usuário intuitiva e fluida.
 
